@@ -123,3 +123,6 @@ G2 = tf(sys2)
 
 zerotrans2 = zero(G2)
 
+poles2 = pole(G2)
+
+autovalores2 = eig(A)
