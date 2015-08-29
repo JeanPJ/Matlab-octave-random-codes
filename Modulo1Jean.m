@@ -108,6 +108,7 @@ vouth3 = a3*sqrt(2*g*h3eq)
  %---------------------------------------7--------------------------------
  sys = ss(A,B,C,D)
  G = tf(sys)
+poles = pole(G)
  zeroinv =zero(sys)
  zerotrans =zero(G)
  
@@ -126,3 +127,5 @@ zerotrans2 = zero(G2)
 poles2 = pole(G2)
 
 autovalores2 = eig(A)
+
+pole(sys)
